@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-theme.min.css"/>-->
+</head>
+<body>
+<div id="main">
+    <div class="container" style="margin-top: 40px;">
+        <div class="btn-group">
+            <button id="bStart" class="btn btn-default" onclick="timerStart();"><i class="glyphicon glyphicon-play"></i></button>
+            <button id="bPause" class="btn btn-default" onclick="timerPause();" disabled="disabled"><i class="glyphicon glyphicon-pause"></i></button>
+            <button id="bStop" class="btn btn-default" onclick="timerStop();" disabled="disabled"><i class="glyphicon glyphicon-stop"></i></button>
+        </div>
+
+        <span id="timer_display" class="label label-primary" onclick="fixTime();" style="font-size: 20px">00:00:00.0</span>
+
+        <ul id="statList" class="list-group" style="margin-top: 10px;"></ul>
+    </div>
+
+</div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
